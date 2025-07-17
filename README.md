@@ -1,4 +1,4 @@
-# Neno Bear v0.1
+# Nano Bear v0.1
 ![image](/image.webp)
 
 <intro>
