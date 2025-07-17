@@ -2,7 +2,7 @@
 ![image](/image.webp)
 
 Howdy 👋
-After working on my `Little Bear` prompt, I decided to distill it down to something even smaller and simpler. What can I say, I have an obsession with making things smaller and simpler I guess. Just like my `Little Bear` prompt, the purpose of this was to create something simple enough for smaller local models to function with. However, there is only so much you can do to "unstupid" a small LLM model. This won't do magic. It's just meant to get the LLM to follow a certain style I like while being minimal.
+After working on my `Little Bear` prompt, I decided to distill it down to something even smaller and simpler. What can I say, I have an obsession with making things smaller and simpler I guess. Just like my `Little Bear` prompt, the purpose of this was to create something simple enough for smaller local models to function with. However, there is only so much you can do to "unstupid" a small LLM model. This won't do magic. It's just meant to get the LLM to follow a certain style I like while being minimal...or...try to.
 
 **SillyTavern Presets**
 |version|link|
