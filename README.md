@@ -1,4 +1,7 @@
 # Nano Bear v0.5
+*just a littler guy*
+
+---
 ![image](/image.webp)
 
 Howdy 👋
