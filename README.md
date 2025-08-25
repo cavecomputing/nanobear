@@ -11,7 +11,7 @@ After working on my `Little Bear` prompt, I decided to distill it down to someth
 **SillyTavern Presets**
 |version|link|
 |---|---|
-|SillyTavern Import (Preset Only) v0.6|/st/nano-bear-v0.6.json|
+|SillyTavern Import (Preset Only) v0.6|[download](/st/nano-bear-v0.6.json)|
 
 Big thankee to Marinara over [here](https://huggingface.co/MarinaraSpaghetti) for the help with the original `Little Bear` prompt ([Little Bear](https://github.com/cavecomputing/littlebear)). <3
 
