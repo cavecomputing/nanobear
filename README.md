@@ -1,5 +1,5 @@
 # Nano Bear v0.6
-*just a littler guy*   
+*just a littler guy*<br>
 *Now even smaller!*
 
 ---
