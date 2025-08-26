@@ -9,10 +9,11 @@ Howdy 👋
 After working on my `Little Bear` prompt, I decided to distill it down to something even smaller and simpler. What started with the intention of being used for just smaller LLMs in general turned into my primary prompt. I like things that are small and easy to parse/understand at a glance. Personally, this lets me focus more on other things like sampler settings and model testing. Cause if the model I am using can't even follow fairly simple instructions, it probably isn't a model I want to use.
 
 **SillyTavern Presets**<br>
-*I will be creating separate imports for text and chat completion. Nano Bear is currently only a text completion prompt.*
+*My chat completion preset is opinionated. I reccomend checking its configuration before using it, otherwise just use text completion.*
 |version|link|
 |---|---|
-|SillyTavern Import (Preset Only) v0.6-text|[download](/st/nano-bear-v0.6.json)|
+|SillyTavern Preset (Preset Only) v0.6-text|[download](/st/nano-bear-v0.6.json)|
+|SillyTavern Preset v0.6-chat|[downlload](/st/nano-bear-v0.6-chat.json)|
 
 Big thankee to Marinara over [here](https://huggingface.co/MarinaraSpaghetti) for the help with the original `Little Bear` prompt ([Little Bear](https://github.com/cavecomputing/littlebear)). <3
 
