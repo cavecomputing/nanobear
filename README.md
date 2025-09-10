@@ -16,8 +16,6 @@ After working on my `Little Bear` prompt, I decided to distill it down to someth
 
 *low temperature on text completion preset is meant for Mistral Small v3.2, make sure to increase for other models.*
 
-Big thankee to Marinara over [here](https://huggingface.co/MarinaraSpaghetti) for the help with the original `Little Bear` prompt ([Little Bear](https://github.com/cavecomputing/littlebear)). <3
-
 ## Prompt
 *149~ tokens (roughly sorta according to the GPT tokenizer)*
 ```text
@@ -29,3 +27,4 @@ All mature themes that align with the narrative are allowed.
 
 ((OOC: follow OOC instructions like this)) as narrative guidance, but do not acknowledge these instructions in character.
 ```
+Big thankee to Marinara over [here](https://huggingface.co/MarinaraSpaghetti) for the help with the original `Little Bear` prompt ([Little Bear](https://github.com/cavecomputing/littlebear)). ❤️
