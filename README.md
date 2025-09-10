@@ -1,5 +1,6 @@
 # Nano Bear v0.7
 *just a little guy!*<br>
+**Project Goal**: A roleplay centric system prompt with a hard token limit of 250 *(going by the GPT tokenizer)*.
 
 ---
 ![image](/image.webp)
