@@ -12,7 +12,9 @@ After working on my `Little Bear` prompt, I decided to distill it down to someth
 |version|link|
 |---|---|
 |SillyTavern Preset (Text Completion, v0.7)|[download](/st/nano-bear-v0.7-text.json)|
-|SillyTavern Preset (Chat Completion, v0.7)|[downlload](/st/nano-bear-v0.7-chat.json)|
+|SillyTavern Preset (Chat Completion, v0.7)|[download](/st/nano-bear-v0.7-chat.json)|
+
+*low temperature on text completion preset is meant for Mistral Small v3.2, make sure to increase for other models.*
 
 Big thankee to Marinara over [here](https://huggingface.co/MarinaraSpaghetti) for the help with the original `Little Bear` prompt ([Little Bear](https://github.com/cavecomputing/littlebear)). <3
 
