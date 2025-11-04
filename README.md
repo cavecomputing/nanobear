@@ -26,4 +26,31 @@ Respond with one or two paragraphs in a third-person narrative style using a "sh
 
 ((OOC: OOC instructions like this are narrative guidance.))
 ```
+# Explanation of text vs chat completion
+When I first started getting into LLMs in general, SillyTavern (ST) was one of the first apps I used. ST really isn't very intuitive for someone that isn't familiar with the plethora of terminology present, and it doesn't help that there isn't a lot of cohesion between various LLM apps. For the sake of helping someone who might not understand the difference, this is a quick explanation of what the difference between `text completion` and `chat completion` is.
+
+## Text Completion
+`Text completion` is the most common way to use SillyTavern. Or at least, a lot of guides and creators expect you to be using it. When you create your API connection (the plug icon in the top bar), the option to choose between `text` and `chat` completion modes is right near the top under `API`.
+
+Long story short, when you submit a request to an LLM, the data you provide is formatted in a certain way called a `prompt template`. SillyTavern essentially uses the configured `prompt template` to take your input, your past messages, various instructions, etc, then packages them into the specific template that the LLM understands. You generally have to choose the correct template. The LLM might generally still work if you choose the wrong template, but it might have degraded performance or throw out complete nonsense.
+
+You configure your context template and system prompt under the `advanced formatting` section (the "A" in the top bar in ST).
+
+## Chat Completion
+`Chat completion` works completely different from text completion. While text completion makes ST the responsible party that formats the outgoing prompt and you have to have your settings in order, chat completion works the opposite. It is a specific standard that sends the server the information (normally compiled as JSON) then the **server** compiles that incoming data to the correct format before giving it to the LLM. This is normally done using a `jinja` template (a type of formatting script) embedded in the model (but not always embedded in the model depending on how it is running).
+
+The important piece of information is that, `chat completion`, when configured, **completely renders the advanced formatting configuration unused.** All the settings you need to configure with chat completion are in the same panel where sampler settings live (the far left button on the top bar). With the **one exception** being how reasoning is parsed and handled. That is still configured under the advanced formatting section.
+
+## Quick Comparison
+*crappy comparison table*
+
+| Feature                   | Text Completion         | Chat Completion          |
+| ------------------------- | ----------------------- | ------------------------ |
+| Formatting responsibility | SillyTavern             | Server                   |
+| Template location         | Advanced Formatting (A) | Embedded in model/server |
+| Advanced Formatting used? | ✅ Yes                   | ❌ No                     |
+| More fine grained control | ✅ Yes                   | ❌ No                     |
+| Simpler                   | ❌ No                    | ✅ Yes                    |
+
+---   
 Big thankee to Marinara over [here](https://huggingface.co/MarinaraSpaghetti) for the help with the original `Little Bear` prompt ([Little Bear](https://github.com/cavecomputing/littlebear)). ❤️
