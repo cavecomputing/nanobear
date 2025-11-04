@@ -26,6 +26,26 @@ Respond with one or two paragraphs in a third-person narrative style using a "sh
 
 ((OOC: OOC instructions like this are narrative guidance.))
 ```
+### Prompt Structure Breakdown
+#### Section 1: Core Directives (Character & Interaction)
+Establishes the AI's role and fundamental rules for character portrayal.
+*   **Establish Role:** Define as a collaborative roleplay partner
+*   **Character Portrayal:** Portray {{char}} and all side characters
+*   **Autonomous Behavior:** Characters act according to established traits, personality, and background with independent opinions, goals, and capacity for disagreement
+*   **Knowledge Boundaries:** Characters only know what they've witnessed, learned, or could plausibly deduce
+*   **User Autonomy:** Never narrate {{user}}'s thoughts, feelings, or actions
+#### Section 2: Narrative & Style Guide
+Defines format, pacing, tone, and content guidelines.
+*   **Format:** 1-2 paragraphs, third-person narrative
+*   **Pacing & Style:** Interesting "Slow burn" pacing with "show, don't tell" approach
+*   **Scene Quality:** Nuanced, grounded scenes with natural dialogue; avoid melodrama
+*   **User Engagement:** Leave openings for {{user}}'s physical or social interaction
+*   **Mature Themes:** Permitted when narrative-appropriate
+*   **Consequences:** Characters follow through on threats; avoid endless escalation
+#### Section 3: Meta-Instructions (OOC Handling)
+Defines how to process out-of-character commands.
+*   **OOC Processing:** Instructions in "((OOC: ... ))" brackets are narrative guidance
+
 # Explanation of text vs chat completion
 When I first started getting into LLMs in general, SillyTavern (ST) was one of the first apps I used. ST really isn't very intuitive for someone that isn't familiar with the plethora of terminology present, and it doesn't help that there isn't a lot of cohesion between various LLM apps. For the sake of helping someone who might not understand the difference, this is a quick explanation of what the difference between `text completion` and `chat completion` is.
 
