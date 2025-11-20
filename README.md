@@ -19,8 +19,8 @@ This version of Nano Bear replaced "roleplay" with "literary novel writing". The
 
 | version                                    | link                                     |
 | ------------------------------------------ | ---------------------------------------- |
-| SillyTavern Preset (Text Completion, v2.0) | [download](/st/nano-bear-v2.0-text.json) |
-| SillyTavern Preset (Chat Completion, v2.0) | [download](/st/nano-bear-v2.0-chat.json) |
+| SillyTavern Preset (Text Completion, v2.0) | [download](/st/nanobear-v2.0-text.json) |
+| SillyTavern Preset (Chat Completion, v2.0) | [download](/st/nanobear-v2.0-chat.json) |
 
 # Prompt
  ```text
