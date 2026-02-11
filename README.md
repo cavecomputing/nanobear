@@ -88,8 +88,6 @@ The important piece of information is that `chat completion`, when configured, *
 |**Advanced Formatting used?**|✅ Yes|❌ No|
 |**Fine-grained control**|✅ Yes|❌ No|
 |**Simpler to use**|❌ No|✅ Yes|
-# GrizzyBurr's BearlyXML character format
-WIP
 
 ---   
 Big thankee to Marinara over [here](https://huggingface.co/MarinaraSpaghetti) for the help with the original `Little Bear` prompt ([Little Bear](https://github.com/cavecomputing/littlebear)). ❤️
