@@ -1,5 +1,5 @@
 
-<div align="center"><img src="/image.webp" width=300></div>
+<div align="center"><img src="/image.png" width=300></div>
 <br>
 <p align=center>
 Howdy! 👋
