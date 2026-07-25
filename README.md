@@ -10,8 +10,8 @@ This is v2.0b of my Nano Bear prompt. After working on `Little Bear`, I used tha
 
 | version                                     | link                                      |
 | ------------------------------------------- | ----------------------------------------- |
-| SillyTavern Preset (Text Completion, v2.0a) | [download](/st/nanobear-v2.0b-text.json) |
-| SillyTavern Preset (Chat Completion, v2.0a) | [download](/st/nanobear-v2.0b-chat.json) |
+| SillyTavern Preset (Text Completion, v2.0b) | [download](/st/nanobear-v2.0b-text.json) |
+| SillyTavern Preset (Chat Completion, v2.0b) | [download](/st/nanobear-v2.0b-chat.json) |
 | Cozy Preset (Default-v2.0b)                 | [download](/cozy/Default-v2.0b.json)               |
 
 ## Prompt
