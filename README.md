@@ -2,8 +2,7 @@
 <div align="center"><img src="/image.png" width=300></div>
 <br>
 <p align=center>
-Howdy! 👋
-
+Howdy! 👋<br>
 This is v2.0b of my Nano Bear prompt. After working on `Little Bear`, I used that knowledge to create something much smaller and simpler to parse (both for me and an LLM). You will find SillyTavern presets, the bare prompt, a breakdown of the prompt structure, and an explanation of text and chat completion below. I have also added templates for my Cozy frontend.
 </p>
 
