@@ -12,7 +12,7 @@ This is v2.0b of my Nano Bear prompt. After working on `Little Bear`, I used tha
 | ------------------------------------------- | ----------------------------------------- |
 | SillyTavern Preset (Text Completion, v2.0a) | [download](/st/nano-bear-v2.0a-text.json) |
 | SillyTavern Preset (Chat Completion, v2.0a) | [download](/st/nano-bear-v2.0a-chat.json) |
-| Cozy Preset (Default-v2.0b)                 | [download](st/Default-v2.0b.json)               |
+| Cozy Preset (Default-v2.0b)                 | [download](/cozy/Default-v2.0b.json)               |
 
 ## Prompt
  ```text
