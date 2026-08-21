@@ -3,7 +3,7 @@
 <br>
 <p align=center>
 Howdy! 👋<br>
-This is v2.1 of my Nano Bear prompt. After working on `Little Bear`, I used that knowledge to create something much smaller and simpler to parse (both for me and an LLM). You will find SillyTavern presets, the bare prompt, a breakdown of the prompt structure, and an explanation of text and chat completion below. I have also added templates for my Cozy frontend.
+This is v2.1 of my Nano Bear prompt. After working on `Little Bear`, I used that knowledge to create something much smaller and simpler to parse (both for me and an LLM). You will find SillyTavern presets and the bare prompt, as well as presets for my Cozy frontend (here for reference).
 </p>
 
 ## Preset Templates
