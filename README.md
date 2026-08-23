@@ -3,7 +3,7 @@
 <br>
 <p align=center>
 Howdy! 👋<br>
-This is v2.1 of my Nano Bear prompt. After working on `Little Bear`, I used that knowledge to create something much smaller and simpler to parse (both for me and an LLM). You will find SillyTavern presets and the bare prompt, as well as presets for my Cozy frontend (here for reference).
+This is v2.1 of my Nano Bear prompt. You will find SillyTavern presets and the bare prompt, as well as presets for my Cozy frontend (here for reference). The primary goal of nanobear is to remain small and compact. Like a hamster. Or a shrew.
 </p>
 
 ## Preset Templates
