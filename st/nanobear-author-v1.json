@@ -1,0 +1,414 @@
+{
+    "chat_completion_source": "custom",
+    "openai_model": "gpt-4-turbo",
+    "claude_model": "claude-sonnet-4-5",
+    "custom_model": "",
+    "custom_url": "",
+    "custom_include_body": "",
+    "custom_exclude_body": "",
+    "custom_include_headers": "",
+    "temperature": 0.8,
+    "frequency_penalty": 0,
+    "presence_penalty": 0,
+    "top_p": 0.95,
+    "top_k": 0,
+    "top_a": 0,
+    "min_p": 0,
+    "repetition_penalty": 1,
+    "openai_max_context": 32768,
+    "openai_max_tokens": 2048,
+    "max_context_unlocked": true,
+    "names_behavior": 0,
+    "send_if_empty": "",
+    "impersonation_prompt": "[Write your next reply from the point of view of {{user}}, using the chat history so far as a guideline for the writing style of {{user}}. Don't write as {{char}} or system. Don't describe actions of {{char}}.]",
+    "new_chat_prompt": "[Start a new Chat]",
+    "new_group_chat_prompt": "[Start a new group chat. Group members: {{group}}]",
+    "new_example_chat_prompt": "[Example Chat]",
+    "continue_nudge_prompt": "[Continue your last message without repeating its original content.]",
+    "bias_preset_selected": "Default (none)",
+    "reverse_proxy": "",
+    "proxy_password": "",
+    "wi_format": "[Lorebook]\n{0}",
+    "scenario_format": "[Scenario]\n{{scenario}}",
+    "personality_format": "[Character Personality]\n{{personality}}",
+    "group_nudge_prompt": "[Write the next reply only as {{char}}.]",
+    "stream_openai": true,
+    "prompts": [
+        {
+            "name": "Main Prompt",
+            "system_prompt": true,
+            "role": "system",
+            "content": "<system_instructions status=\"enabled\">\nYou are the author of a story directed by the user. Narrate in third person omniscient—the thoughts, feelings, actions, and dialogue of all characters. Characters act autonomously according to their established traits, personality, and background, with their own opinions and goals, and can disagree with each other. Characters can only know, mention, or act on information they have personally witnessed, learned, or could plausibly deduce.\n</system_instructions>",
+            "identifier": "main"
+        },
+        {
+            "name": "Auxiliary Prompt",
+            "system_prompt": true,
+            "role": "system",
+            "content": "",
+            "identifier": "nsfw"
+        },
+        {
+            "name": "Post-History Instructions",
+            "system_prompt": true,
+            "role": "system",
+            "content": "<post_history_instructions status=\"enabled\">\nTreat this input as stage direction outside the story, not an event that has happened. It defines the start of your next response. Carry out the direction at the start of your response, then continue writing past it, acting as all characters including {{user}}.\n\nWrite in a natural, YA-novel prose style using \"show, don't tell,\" prioritizing reader immersion. Move the story forward—let characters act on their own goals, and introduce new details, complications, or reactions rather than only responding to what the user provided. Let dialogue, one-line reactions, and short internal thoughts stand as their own paragraphs when it suits the pacing—don't merge every action, thought, and line of dialogue into the same block. Vary paragraph length and rhythm naturally, mixing short punchy lines with longer descriptive ones. Keep scenes grounded with nuanced descriptions and natural-sounding dialogue. Use a slow-burn pace while avoiding melodrama. You are allowed to explore mature themes that align with the narrative and are encouraged to do so.\n\nAim for roughly 250-400 words. Stop once the current beat resolves—don't chain into the next scene or event just to fill space.\n\nAvoid repetitive phrases or formulaic descriptions so each response feels fresh. Don't use contrastive negation or false correction—\"not X but Y\" (\"not anger but fear\") should just be \"it is fear.\" Don't use negation as atmosphere (\"it wasn't the wind\"). State directly what is.\n</post_history_instructions>",
+            "identifier": "jailbreak"
+        },
+        {
+            "identifier": "dialogueExamples",
+            "name": "Chat Examples",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "chatHistory",
+            "name": "Chat History",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "worldInfoAfter",
+            "name": "World Info (after)",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "worldInfoBefore",
+            "name": "World Info (before)",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "enhanceDefinitions",
+            "role": "system",
+            "name": "Enhance Definitions",
+            "content": "If you have more knowledge of {{char}}, add to the character's lore and personality to enhance them but keep the Character Sheet's definitions absolute.",
+            "system_prompt": true,
+            "marker": false
+        },
+        {
+            "identifier": "charDescription",
+            "name": "Char Description",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "charPersonality",
+            "name": "Char Personality",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "scenario",
+            "name": "Scenario",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "personaDescription",
+            "name": "Persona Description",
+            "system_prompt": true,
+            "marker": true
+        },
+        {
+            "identifier": "a1c4f2e0-3b77-4d19-9f2a-5c81e6b04d31",
+            "name": "<partner_character>",
+            "role": "system",
+            "content": "<partner_character>",
+            "system_prompt": false,
+            "marker": false,
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "29ecbb08-b3ff-4f91-90a2-d4096e28cfb9",
+            "name": "Example Dialogue",
+            "role": "system",
+            "content": "[Example Dialogue]\n{{mesExamples}}",
+            "system_prompt": false,
+            "marker": false,
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "b2d5a3f1-4c88-4e2a-8a3b-6d92f7c15e42",
+            "name": "</partner_character>",
+            "role": "system",
+            "content": "</partner_character>",
+            "system_prompt": false,
+            "marker": false,
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "c3e6b4a2-5d99-4f3b-9b4c-7ea308d26f53",
+            "name": "<user>",
+            "role": "system",
+            "content": "<user>\n[{{user}}'s Persona]",
+            "system_prompt": false,
+            "marker": false,
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "d4f7c5b3-6eaa-4a4c-8c5d-8fb419e37a64",
+            "name": "</user>",
+            "role": "system",
+            "content": "</user>",
+            "system_prompt": false,
+            "marker": false,
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "e5a8d6c4-7fbb-4b5d-9d6e-90c52af48b75",
+            "name": "<world_info>",
+            "role": "system",
+            "content": "<world_info>",
+            "system_prompt": false,
+            "marker": false,
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "f6b9e7d5-80cc-4c6e-8e7f-a1d63bf59c86",
+            "name": "</world_info>",
+            "role": "system",
+            "content": "</world_info>",
+            "system_prompt": false,
+            "marker": false,
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "07caf8e6-91dd-4d7f-9f80-b2e74c06ad97",
+            "name": "<memory>",
+            "role": "system",
+            "content": "<memory>\n[Memory — Story So Far]\n{{summary}}",
+            "system_prompt": false,
+            "marker": false,
+            "enabled": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "18dba9f7-a2ee-4e80-8091-c3f85d17bea8",
+            "name": "</memory>",
+            "role": "system",
+            "content": "</memory>",
+            "system_prompt": false,
+            "marker": false,
+            "enabled": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "forbid_overrides": false
+        }
+    ],
+    "prompt_order": [
+        {
+            "character_id": 100000,
+            "order": [
+                {
+                    "identifier": "main",
+                    "enabled": true
+                },
+                {
+                    "identifier": "a1c4f2e0-3b77-4d19-9f2a-5c81e6b04d31",
+                    "enabled": true
+                },
+                {
+                    "identifier": "charDescription",
+                    "enabled": true
+                },
+                {
+                    "identifier": "charPersonality",
+                    "enabled": true
+                },
+                {
+                    "identifier": "29ecbb08-b3ff-4f91-90a2-d4096e28cfb9",
+                    "enabled": true
+                },
+                {
+                    "identifier": "b2d5a3f1-4c88-4e2a-8a3b-6d92f7c15e42",
+                    "enabled": true
+                },
+                {
+                    "identifier": "dialogueExamples",
+                    "enabled": false
+                },
+                {
+                    "identifier": "c3e6b4a2-5d99-4f3b-9b4c-7ea308d26f53",
+                    "enabled": true
+                },
+                {
+                    "identifier": "personaDescription",
+                    "enabled": true
+                },
+                {
+                    "identifier": "d4f7c5b3-6eaa-4a4c-8c5d-8fb419e37a64",
+                    "enabled": true
+                },
+                {
+                    "identifier": "e5a8d6c4-7fbb-4b5d-9d6e-90c52af48b75",
+                    "enabled": true
+                },
+                {
+                    "identifier": "worldInfoBefore",
+                    "enabled": true
+                },
+                {
+                    "identifier": "scenario",
+                    "enabled": true
+                },
+                {
+                    "identifier": "worldInfoAfter",
+                    "enabled": true
+                },
+                {
+                    "identifier": "f6b9e7d5-80cc-4c6e-8e7f-a1d63bf59c86",
+                    "enabled": true
+                },
+                {
+                    "identifier": "07caf8e6-91dd-4d7f-9f80-b2e74c06ad97",
+                    "enabled": false
+                },
+                {
+                    "identifier": "18dba9f7-a2ee-4e80-8091-c3f85d17bea8",
+                    "enabled": false
+                },
+                {
+                    "identifier": "enhanceDefinitions",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nsfw",
+                    "enabled": false
+                },
+                {
+                    "identifier": "chatHistory",
+                    "enabled": true
+                },
+                {
+                    "identifier": "jailbreak",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "character_id": 100001,
+            "order": [
+                {
+                    "identifier": "main",
+                    "enabled": true
+                },
+                {
+                    "identifier": "a1c4f2e0-3b77-4d19-9f2a-5c81e6b04d31",
+                    "enabled": true
+                },
+                {
+                    "identifier": "charDescription",
+                    "enabled": true
+                },
+                {
+                    "identifier": "charPersonality",
+                    "enabled": true
+                },
+                {
+                    "identifier": "29ecbb08-b3ff-4f91-90a2-d4096e28cfb9",
+                    "enabled": true
+                },
+                {
+                    "identifier": "b2d5a3f1-4c88-4e2a-8a3b-6d92f7c15e42",
+                    "enabled": true
+                },
+                {
+                    "identifier": "dialogueExamples",
+                    "enabled": false
+                },
+                {
+                    "identifier": "c3e6b4a2-5d99-4f3b-9b4c-7ea308d26f53",
+                    "enabled": true
+                },
+                {
+                    "identifier": "personaDescription",
+                    "enabled": true
+                },
+                {
+                    "identifier": "d4f7c5b3-6eaa-4a4c-8c5d-8fb419e37a64",
+                    "enabled": true
+                },
+                {
+                    "identifier": "e5a8d6c4-7fbb-4b5d-9d6e-90c52af48b75",
+                    "enabled": true
+                },
+                {
+                    "identifier": "worldInfoBefore",
+                    "enabled": true
+                },
+                {
+                    "identifier": "scenario",
+                    "enabled": true
+                },
+                {
+                    "identifier": "worldInfoAfter",
+                    "enabled": true
+                },
+                {
+                    "identifier": "f6b9e7d5-80cc-4c6e-8e7f-a1d63bf59c86",
+                    "enabled": true
+                },
+                {
+                    "identifier": "07caf8e6-91dd-4d7f-9f80-b2e74c06ad97",
+                    "enabled": false
+                },
+                {
+                    "identifier": "18dba9f7-a2ee-4e80-8091-c3f85d17bea8",
+                    "enabled": false
+                },
+                {
+                    "identifier": "enhanceDefinitions",
+                    "enabled": false
+                },
+                {
+                    "identifier": "nsfw",
+                    "enabled": false
+                },
+                {
+                    "identifier": "chatHistory",
+                    "enabled": true
+                },
+                {
+                    "identifier": "jailbreak",
+                    "enabled": true
+                }
+            ]
+        }
+    ],
+    "show_external_models": false,
+    "assistant_prefill": "",
+    "assistant_impersonation": "",
+    "use_sysprompt": true,
+    "squash_system_messages": true,
+    "media_inlining": false,
+    "bypass_status_check": false,
+    "continue_prefill": false,
+    "continue_postfix": " ",
+    "seed": -1,
+    "n": 1
+}

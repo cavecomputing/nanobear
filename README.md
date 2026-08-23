@@ -8,12 +8,20 @@ This is v2.1 of my Nano Bear prompt. After working on `Little Bear`, I used that
 
 ## Preset Templates
 
-| version                                     | link                                      |
-| ------------------------------------------- | ----------------------------------------- |
-| SillyTavern Preset (Text Completion, v2.0b) | [download](/st/nanobear-v2.0b-text.json) |
-| SillyTavern Preset (Chat Completion, v2.0b) | [download](/st/nanobear-v2.0b-chat.json) |
-| Cozy Preset (v2.1)                 | [download](/cozy/v2.1.json)               |
-| Cozy Preset (Author) (v1) | [download](/cozy/nanobear_author_v1.json) |
+### SillyTavern
+
+| version                                   | link                                    |
+| ----------------------------------------- | --------------------------------------- |
+| Text Completion (v2.0b)                   | [download](/st/nanobear-v2.0b-text.json) |
+| Chat Completion (v2.0b)                   | [download](/st/nanobear-v2.0b-chat.json) |
+| Author, Chat Completion (v1)              | [download](/st/nanobear-author-v1.json)  |
+
+### Cozy
+
+| version      | link                                      |
+| ------------ | ----------------------------------------- |
+| v2.1         | [download](/cozy/v2.1.json)               |
+| Author (v1)  | [download](/cozy/nanobear_author_v1.json) |
 
 ## Plain Prompt
  ```text
