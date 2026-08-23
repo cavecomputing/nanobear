@@ -12,9 +12,10 @@ This is v2.1 of my Nano Bear prompt. After working on `Little Bear`, I used that
 
 | version                                   | link                                    |
 | ----------------------------------------- | --------------------------------------- |
-| Text Completion (v2.0b)                   | [download](/st/nanobear-v2.0b-text.json) |
-| Chat Completion (v2.0b)                   | [download](/st/nanobear-v2.0b-chat.json) |
-| Author, Chat Completion (v1)              | [download](/st/nanobear-author-v1.json)  |
+| Text Completion (v2.1)                   | [download](/st/nanobear-v2.1-text.json) |
+| Chat Completion (v2.1)                   | [download](/st/nanobear-v2.1-chat.json) |
+| Author, Chat Completion (v1)              | [download](/st/nanobear-author-v1-chat.json)  |
+| Author, Text Completion (v1) | [download](/st/nanobear-author-v1-text.json) |
 
 ### Cozy
 
