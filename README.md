@@ -10,10 +10,8 @@ This is my Nano Bear prompt. You will find SillyTavern presets and the bare prom
 
 Grab whatever you need straight from the preset folders — the latest version is always the highest number.
 
-Files are named `<mode>-v<version>.json`, where the mode is `roleplay` (standard nanobear) or `story` (story mode). SillyTavern presets add a `-chat` or `-text` suffix for Chat Completion vs. Text Completion.
-
-- **SillyTavern:** [`presets/sillytavern/`](/presets/sillytavern) — e.g. `roleplay-v2.1-chat.json`, `story-v1-text.json`
-- **Cozy:** [`presets/cozy/`](/presets/cozy) — e.g. `roleplay-v2.1.json`, `story-v2.json`
+- **SillyTavern:** [`presets/sillytavern/`](/presets/sillytavern)
+- **Cozy:** [`presets/cozy/`](/presets/cozy)
 
 ## Roleplay v2.1
  ```text
