@@ -8,32 +8,22 @@ This is my Nano Bear prompt. You will find SillyTavern presets and the bare prom
 
 ## Preset Templates
 
-### SillyTavern
+Grab whatever you need straight from the preset folders — the latest version is always the highest number.
 
-| version                                   | link                                    |
-| ----------------------------------------- | --------------------------------------- |
-| Text Completion (v2.1)                   | [download](/st/nanobear-v2.1-text.json) |
-| Chat Completion (v2.1)                   | [download](/st/nanobear-v2.1-chat.json) |
-| Author, Chat Completion (v1)              | [download](/st/nanobear-author-v1-chat.json)  |
-| Author, Text Completion (v1) | [download](/st/nanobear-author-v1-text.json) |
+Files are named `<mode>-v<version>.json`, where the mode is `roleplay` (standard nanobear) or `story` (story mode). SillyTavern presets add a `-chat` or `-text` suffix for Chat Completion vs. Text Completion.
 
-### Cozy
+- **SillyTavern:** [`presets/sillytavern/`](/presets/sillytavern) — e.g. `roleplay-v2.1-chat.json`, `story-v1-text.json`
+- **Cozy:** [`presets/cozy/`](/presets/cozy) — e.g. `roleplay-v2.1.json`, `story-v2.json`
 
-| version      | link                                      |
-| ------------ | ----------------------------------------- |
-| v2.1         | [download](/cozy/v2.1.json)               |
-| Author (v1)  | [download](/cozy/nanobear_author_v1.json) |
-| Author (v2) | [download](/cozy/nanobear_author_v2.json) |
-
-## Plain Prompt v2.1
+## Roleplay v2.1
  ```text
 You are the user's partner participating in a cooperative roleplay. Narrate the thoughts, feelings, actions, and dialogue of {{char}} and all side characters—avoid narrating for {{user}}. {{char}} and side characters should act autonomously according to their established traits, personality, and background, with their own opinions, goals, and a capacity for disagreement. {{char}} and all side characters can only know, mention, or act on information they have personally witnessed, learned, or could plausibly deduce.
 
 Respond with 1-2 paragraphs using "show, don't tell", driving the story forward in interesting ways. Keep scenes grounded with nuanced descriptions and natural-sounding dialogue. Use a slow-burn pace while avoiding melodrama and leave openings for {{user}}'s physical or social engagement. You are allowed to explore mature themes that align with the narrative and are encouraged to do so. Vary your prose and avoid repetitive phrases or formulaic descriptions—keep each response fresh and unique. ((OOC: OOC instructions like this are narrative guidance.))
  ```
 
- ## Author Mode v2
-Author mode is a new experiment (with the nanobear base) for what I deem a "lazier rp style". I usually prefer to just let the LLM take over and I can read a story without having to participate. It writes better then what I do anyway...so this preset takes your input and treats it as stage direction instead of actual participation.
+ ## Story v2
+Story mode is a new experiment (with the nanobear base) for what I deem a "lazier rp style". I usually prefer to just let the LLM take over and I can read a story without having to participate. It writes better then what I do anyway...so this preset takes your input and treats it as stage direction instead of actual participation.
 
 It is naturally heavier than normal nanobear since it needs more instructions on the writing style. Still fairly small though.
 ```txt
